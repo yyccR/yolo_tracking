@@ -1,6 +1,6 @@
-# YOLO + BYTETracker 多目标跟踪 (ncnn + OpenCV)
+# YOLO + BYTETracker 多目标跟踪
 
-本项目集成了 YOLOv8/YOLOv11 目标检测与 BYTETracker 多目标跟踪，基于 ncnn 和 OpenCV，支持 macOS 和 Linux。
+> 本项目集成了 YOLOv8/YOLOv11 目标检测与 BYTETracker 多目标跟踪，基于 ncnn 和 OpenCV，支持 macOS 和 Linux。
 
 
 ![demo](data/demo.gif)
