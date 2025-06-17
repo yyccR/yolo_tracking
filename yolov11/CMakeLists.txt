@@ -1,0 +1,6 @@
+aux_source_directory(. yolov11)
+#set(OpenCV_DIR ${CMAKE_SOURCE_DIR}/../libs/opencv-mobile-4.5.4-android/sdk/native/jni)
+find_package(OpenCV REQUIRED core imgproc highgui)
+find_package(ncnn REQUIRED)
+add_library(yolov11_lib yolov11_ncn.cpp)
+target_link_libraries(yolov11_lib ${OpenCV_LIBS} ncnn)

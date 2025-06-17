@@ -1,0 +1,7 @@
+aux_source_directory(. common)
+#set(OpenCV_DIR ${CMAKE_SOURCE_DIR}/../libs/opencv-mobile-4.5.4-android/sdk/native/jni)
+find_package(OpenCV REQUIRED core imgproc highgui)
+find_package(ncnn REQUIRED)
+add_library(common STATIC common.cpp)
+target_link_libraries(common ${OpenCV_LIBS} ncnn)
+target_include_directories(common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

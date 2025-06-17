@@ -1,0 +1,60 @@
+# 编译输出
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+*.out
+*.log
+
+# ncnn 临时/自动生成
+ncnn/build/
+ncnn/CMakeFiles/
+ncnn/CMakeCache.txt
+ncnn/cmake_install.cmake
+ncnn/Makefile
+
+# OpenCV 缓存
+opencv/build/
+
+# Python/脚本缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 数据/结果
+*.jpg
+*.png
+*.bmp
+*.avi
+*.mp4
+*.gif
+!data/demo.gif
+
+# VSCode/CLion/IDE 配置
+.vscode/
+.idea/
+*.iml
+
+# Mac/Linux/系统文件
+.DS_Store
+Thumbs.db
+
+# 个人/临时
+*.swp
+*.swo
+*.bak
+*~
+
+# 不提交的模型
+*.bin
+*.param
+!yolov8/*.md
+!yolov11/*.md 
