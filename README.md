@@ -1,9 +1,9 @@
-# YOLO + BYTETracker 多目标跟踪
+# YOLO Tracking 多目标跟踪
 
-> 本项目集成了 YOLOv8/YOLOv11 目标检测与 BYTETracker 多目标跟踪，基于 ncnn 和 OpenCV，支持 macOS 和 Linux。
+本项目集成了 YOLOv8/YOLOv11 目标检测与 BYTETracker 多目标跟踪，基于 ncnn 和 OpenCV，支持 macOS 和 Linux。
 
 
-![demo](data/demo.gif)
+![demo](data/gif/track.gif)
 
 
 ## 目录结构
@@ -50,9 +50,10 @@ cmake -S . -B build && cmake --build build -j 8
 ```
 
 - 默认编译 YOLOv8。切换 YOLOv11：
-  ```bash
+
+```bash
   cmake -S . -B build -DUSE_YOLOV8=OFF && cmake --build build -j 8
-  ```
+```
 
 ## 模型准备
 
@@ -102,5 +103,6 @@ cmake -S . -B build && cmake --build build -j 8
 - [ncnn](https://github.com/Tencent/ncnn)
 - [YOLOv8/YOLOv11](https://github.com/ultralytics/ultralytics)
 - [BYTETracker](https://github.com/ifzhang/ByteTrack)
+
 
 如有问题欢迎 issue！ 
